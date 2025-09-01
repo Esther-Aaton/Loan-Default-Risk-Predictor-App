@@ -34,23 +34,23 @@ latitude_gps = st.number_input("Enter Latitude (optional)", value=0.0, format="%
 #Prediction Button
 if st.button("Predict the Loan Default Risk"):
   customer_info = {
-    "Referral_status": [referred],
-    "Bank_account_type": [bank_account_type],
-    "Bank_name": [bank_name_clients],
-    "Employment_status": [employment_status_clients],
-    "Age_group": [age_group],
-    "Payment_status": [payment_status],
-    "Repayment_ratio":[repayment_ratio],
-    "Loanamount":[loanamount],
-    "Totaldue":[totaldue],
-    "Termdays":[termdays],
-    "Avg_credit_score":[avg_credit_score],
-    "Loan_approval_time_min":[loan_approval_time_min],
-    "Loan_counts":[loan_counts],
-    "Max_loan_amount":[max_loan_amount],
-    "Avg_loan_amount":[avg_loan_amount],
-    "Longitude_gps":[longitude_gps],
-    "Latitude_gps":[latitude_gps]
+    "referred": [referred],
+    "bank_account_type": [bank_account_type],
+    "bank_name_clients": [bank_name_clients],
+    "employment_status_clients": [employment_status_clients],
+    "age_group": [age_group],
+    "payment_status": [payment_status],
+    "repayment_ratio":[repayment_ratio],
+    "loanamount":[loanamount],
+    "totaldue":[totaldue],
+    "termdays":[termdays],
+    "avg_credit_score":[avg_credit_score],
+    "loan_approval_time_min":[loan_approval_time_min],
+    "loan_counts":[loan_counts],
+    "max_loan_amount":[max_loan_amount],
+    "avg_loan_amount":[avg_loan_amount],
+    "longitude_gps":[longitude_gps],
+    "latitude_gps":[latitude_gps]
   }
   #Converting into a DataFrame
   input_df = pd.DataFrame(customer_info)
