@@ -59,6 +59,6 @@ if st.button("Predict the Loan Default Risk"):
   try:
     loan_default = model.predict(input_df)[0]
     prediction = np.expm1(loan_default)
-    st.success(f"Borrower's Loan Default Risk is:{prediction:.2f}")
+    st.success(f"Borrower's Loan Default Risk is:{prediction: .2f}")
   except Exception as e:
     st.error(f"Prediction error: {e}")
