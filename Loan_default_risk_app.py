@@ -28,8 +28,8 @@ loan_approval_time_min = st.slider("Loan Approval Time(min)", 60, 3000, 600)
 loan_counts = st.number_input("Loan Counts", 1, 30, 10)
 max_loan_amount = st.slider("Max Loan Collected", 10000, 60000, 30000)
 avg_loan_amount = st.slider("Average Loan Collected", 10000, 60000, 30000)
-longitude_gps = st.number_input("Enter Longitude (optional)", value=0.0, format="%.6f")
-latitude_gps = st.number_input("Enter Latitude (optional)", value=0.0, format="%.6f")
+longitude_gps = st.number_input("Enter Longitude (optional)", value=0.0, format="%.2f")
+latitude_gps = st.number_input("Enter Latitude (optional)", value=0.0, format="%.2f")
 
 #Prediction Button
 if st.button("Predict the Loan Default Risk"):
